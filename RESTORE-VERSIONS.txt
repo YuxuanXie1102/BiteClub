@@ -1,0 +1,12 @@
+BiteClub source package
+Latest source commit: 33da4da14312b5b4ac50caa9e3b5584ebd1e3c17
+
+The source files are the latest published revision. biteclub-history.bundle
+preserves the complete Git history for the process presentation.
+
+Restore with:
+  git clone biteclub-history.bundle biteclub-restored
+  cd biteclub-restored
+  git log --oneline --all
+
+See process/iteration-history.md for each iteration's design decisions.
