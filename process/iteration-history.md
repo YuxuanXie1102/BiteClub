@@ -84,3 +84,8 @@ User feedback: search lacked a distance filter; the Quick Pick result card blend
 Changes: added route-distance filtering with Any distance, Within 1 km, Within 5 km and a numeric Custom distance in kilometres. The chosen distance uses the currently selected walking, cycling or driving route distance already returned by Geoapify. Quick Pick result cards now have a warm light surface and subtle separation. Battle checkboxes are white when inactive and green with a white check when selected. Battle selection photos now run flush to the top and side edges; shared restaurant images explicitly render edge-to-edge.
 Design rationale: make location constraints explicit without adding an imprecise range slider, improve selection visibility, and strengthen card/image hierarchy. Distance filtering waits for route data and does not trigger another restaurant API request.
 Validation planned: TypeScript, production build and existing mocked restaurant quota checks. No live restaurant request during validation.
+# Iteration 11 — Responsive mobile flow and explicit API states
+
+Changes: strengthened the phone layout across group setup, filters, restaurant results, map mode, details and battle; added a centered API-connection error dialog that confirms no restaurant request was sent; added an inline no-suitable-restaurants state after completed searches; removed Test Version language and all bilingual confirmation labels; rewrote the quota confirmation in English to explain the limited free allowance and the five-result cap.
+
+Validation planned: TypeScript, production build, English-only copy scan and mocked quota checks. No live restaurant request during validation.
